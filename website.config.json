@@ -1,13 +1,13 @@
 {
   "site": {
-    "name": "Minimal Starter",
-    "tagline": "Your Creative Canvas",
-    "description": "A clean, minimal starter template providing the perfect foundation for your next project. Built with modern tools and ready for your creativity.",
+    "name": "SoundWave Studio",
+    "tagline": "Create. Mix. Visualize. Share.",
+    "description": "The ultimate music video studio for creators. Generate stunning music videos, remix instrumentals, build songs from scratch with professional templates, and design album covers. Your complete creative suite for music production and visual storytelling.",
     "ogImage": "/og-image.png",
     "twitterHandle": "",
     "contact": {
-      "email": "contact@example.com",
-      "company": "Your Company",
+      "email": "contact@soundwavestudio.com",
+      "company": "SoundWave Studio",
       "address": ""
     },
     "legal": {

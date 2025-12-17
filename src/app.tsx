@@ -7,6 +7,10 @@ import Dashboard from "@/pages/dashboard";
 import Home from "@/pages/home";
 import SignIn from "@/pages/sign-in";
 import SignUp from "@/pages/sign-up";
+import VideoStudio from "@/pages/video-studio";
+import SongBuilder from "@/pages/song-builder";
+import AlbumCover from "@/pages/album-cover";
+import Gallery from "@/pages/gallery";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 export function App() {
@@ -18,6 +22,37 @@ export function App() {
         {/* Authentication routes */}
         <Route path="/signin" element={<SignIn />} />
         <Route path="/signup" element={<SignUp />} />
+        <Route path="/sign-in" element={<SignIn />} />
+        <Route path="/sign-up" element={<SignUp />} />
+
+        {/* Gallery - Public */}
+        <Route path="/gallery" element={<Gallery />} />
+
+        {/* Studio routes - Protected */}
+        <Route
+          path="/video-studio"
+          element={
+            <RequireAuth>
+              <VideoStudio />
+            </RequireAuth>
+          }
+        />
+        <Route
+          path="/song-builder"
+          element={
+            <RequireAuth>
+              <SongBuilder />
+            </RequireAuth>
+          }
+        />
+        <Route
+          path="/album-cover"
+          element={
+            <RequireAuth>
+              <AlbumCover />
+            </RequireAuth>
+          }
+        />
 
         {/* Billing routes */}
         <Route
